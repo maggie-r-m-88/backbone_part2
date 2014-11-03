@@ -1,3 +1,4 @@
-## Yo, I'm a Readme
+## Backbone, Part II
 
-You should probably update me so people looking at your code have an idea what it is being used for :)
+I have basically taken my initial backbone intro project and added/re-formatted into collections, views, and model.
+
