@@ -5,7 +5,8 @@ var Member = Backbone.Model.extend({
     name: '',
     email: '',
     gender: '',
-    subscribe: false
+    subscribe: false,
+    language: ''
   },
 
   idAttribute: '_id',

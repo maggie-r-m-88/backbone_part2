@@ -16,12 +16,14 @@ $('#memberForm').on('submit', function (event){
   var member_email = $('#email').val();
   var member_gender = $('input[name=gender]:checked').val();
   var member_subscribe = $('#mailing').prop('checked');
+  var member_language = $("#lang option:selected").text();
 
   var m = new Member({
     name: member_name,
     email: member_email,
     gender: member_gender,
-    subscribe: member_subscribe
+    subscribe: member_subscribe,
+    language: member_language
 
   });
 
