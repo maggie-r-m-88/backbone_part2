@@ -8,29 +8,22 @@ all_members.fetch().done( function () {
     collection: all_members
   });
 });
-$('#join-us').on('click', function (event){
-    event.preventDefault();
 
-
-    $('.Join').fadeIn();
-
-});
 $('#memberForm').on('submit', function (event){
   event.preventDefault();
-
 
   var member_name = $('#name').val();
   var member_email = $('#email').val();
   var member_gender = $('input[name=gender]:checked').val();
+  var member_subscribe = $('#mailing').prop('checked');
 
   var m = new Member({
     name: member_name,
     email: member_email,
-    gender: member_gender
+    gender: member_gender,
+    subscribe: member_subscribe
 
   });
-
-
 
 
   all_members.add(m);

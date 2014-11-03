@@ -24,31 +24,37 @@
   <body>
 
     <div class="hero-unit">
-      <h1>Backbone Pt 2</h1>
+      <h1>Backbone</h1>
       <div class="Join">
       <p>Join our community</p>
       <form name = "Form1" id="memberForm">
         <input type="text" id="name" autofocus="autofocus" placeholder="Your Name"/>
 
         <input type="text" id="email" autofocus="autofocus" placeholder="E-mail Address"/>
-      <!--  <div class="mailer">
-        <input type="checkbox" name ="checkbox1" id="mailing" onclick="check()" /><p>Send me Updates</p>
-      </div>-->
-      <div class="gender">
-      <p>Gender</p>
-      <input type="radio" name="gender" value="Female">Female
-      <input type="radio" name="gender" value="Male">Male
-    </div>
-        <button>Submit</button>
-      </form>
+        <div class="mailer">
+        <input type="checkbox" name ="checkbox1" id="mailing"/><p>Send me Updates</p>
       </div>
-<div id="feelscontainer"></div>
-    </div>
+    <div class="gender">
+      <p>Gender</p>
+
+      <label for="man">Male<input type="radio" name="gender" value="Male" id="man"/></label>
+    <label for="woman">Female<input type="radio" name="gender" value="Female" id="woman"/></label>
+
+  </div>
+
+
+        <button>Submit</button>
+</form>
+    </div><!---end of hero-->
+
+
+<!--<div id="feelscontainer"></div>-->
 
 
 <script type="text/template" id="feels">
 <li>I'm <%= name %>, this is my <%= email %></li>
 </script>
+
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
     <script src="../bower_components/jquery/dist/jquery.js"></script>

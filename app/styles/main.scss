@@ -24,7 +24,7 @@ body {
   width: 60%;
   font-size: 18px;
   margin-top: 30px;
-  font-weight: 200;
+
   line-height: 30px;
   background-color:   white;
   padding: 60px;
@@ -50,7 +50,7 @@ body {
    opacity: .8;
 
   }
-  input{
+   #name,#email{
     display: block;
     width: 80%;
     font-size: 15px;
@@ -80,20 +80,28 @@ body {
 }
 .mailer{
   position: relative;
-
-
   p{
     position: absolute;
     margin-top: -35px;
-    margin-left: 53%;
+    margin-left: 45%;
   }
   #mailing{
     margin-left: 87%;
-
-
   }
 }
 
 #feelscontainer{
-  
+
+}
+
+.gender{
+  width: 80%;
+  margin-left: 10%;
+
+p{
+  text-align: left;
+}
+label{
+  border: 2px solid green;
+}
 }
