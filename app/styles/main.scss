@@ -89,16 +89,21 @@ body {
     margin-left: 87%;
   }
 }
-
-#feelscontainer{
-
+.language{
+  width: 80%;
+  margin-left: 10%;
+  position: relative;
+  p
+  {text-align: left;}
+  #lang{
+    position: absolute;
+    margin-top: -42px;
+    margin-left: 100px;
+  }
 }
-
 .gender{
   width: 80%;
   margin-left: 10%;
-
-
 p{
   text-align: left;
 }
@@ -114,4 +119,9 @@ label{
   width: 80%;
   margin-top: -49px;
   margin-left: 20%;
+}
+
+#feelsContainer .feels{
+  width: 200px;
+  border: 2px solid red;
 }

@@ -1,4 +1,4 @@
 var Members = Backbone.Collection.extend({
 model: Member,
-url: 'http://tiy-atl-fe-server.herokuapp.com/collections/memberlist1'
+url: 'http://tiy-atl-fe-server.herokuapp.com/collections/memberlist3'
 });
