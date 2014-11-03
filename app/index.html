@@ -35,7 +35,7 @@
         <input type="checkbox" name ="checkbox1" id="mailing"/><p>Send me Updates</p>
       </div>
     <div class="gender">
-      <p>Gender</p>
+
         <div id="radios">
       <label for="man">Male   <input type="radio" name="gender" value="Male" id="man"/></label>
     <label for="woman">Female   <input type="radio" name="gender" value="Female" id="woman"/></label>
@@ -47,7 +47,7 @@
         <option value = "1">English</option>
         <option value = "2">Spanish</option>
         <option value = "3">Portuguese</option>
-        <option value = "4">Other</option>
+        <option value = "4">French</option>
       </select>
 
 
@@ -56,14 +56,15 @@
 </form>
     </div><!---end of hero-->
 
-
+</div>
+<div id="thanks">Welcome to Backbone!<p>Check your email for further instructions.</p><p><a href="#">Home</a></div>
 <div id="feelscontainer">
 
 </div>
 
 
 <script type="text/template" id="feels">
-<li> <%= name %> <%= email %>  <%=language %></li>
+<li> <a href="mailto:<%=email %>"><%= name %> </a> speaks <%=language %></li>
 </script>
 
     <!-- build:js scripts/vendor.js -->

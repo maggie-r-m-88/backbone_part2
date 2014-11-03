@@ -38,5 +38,7 @@ $('#memberForm').on('submit', function (event){
 
   $('#name').val('');
   $('#email').val('');
+  $('.hero-unit').hide();
+  $('#thanks').fadeIn(300);
 
 });
