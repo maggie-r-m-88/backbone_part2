@@ -21,11 +21,12 @@ $('#memberForm').on('submit', function (event){
 
   var member_name = $('#name').val();
   var member_email = $('#email').val();
-
+  var member_gender = $('input[name=gender]:checked').val();
 
   var m = new Member({
     name: member_name,
-    email: member_email
+    email: member_email,
+    gender: member_gender
 
   });
 

@@ -2,35 +2,98 @@
 @import '../../bower_components/bourbon/dist/bourbon';
 @import '../../bower_components/neat/app/assets/stylesheets/neat';
 
-// Custom Styles
+
+$testfont: 'PT Sans', sans-serif;
+//font-family: 'Francois One', sans-serif;
+$iceblue: hsla(175, 28%, 78%, 1);
 body {
   background: #fafafa;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #333;
+  background-image:url("/images/iceberg.jpeg");
+  background-size: cover;
+  height:600px;
+
+  font-size: 62.5%;
+
 }
 
+
 .hero-unit {
-  margin: 50px auto 0 auto;
-  width: 600px;
+  margin-left: 30%;
+  width: 60%;
   font-size: 18px;
+  margin-top: 30px;
   font-weight: 200;
   line-height: 30px;
-  background-color: hsla(170, 100%, 50%, 1);
-  border-radius: 500px;
+  background-color:   white;
   padding: 60px;
-  transition: background-color 0.5s ease;
+  position: relative;
+  transition: opacity 1s ease;
+  opacity: .6;
   h1 {
-    font-size: 60px;
+
+    font-size: 4.0em;
     line-height: 1;
-    background-color: hsla(64, 100%, 50%, 1);
-    padding: 20px;
-    border-radius: 40px;
+
+    width: 100%;
+
+    text-align: center;
     letter-spacing: -1px;
+
   }
   p{
+    font-weight: bold;
     text-align: center;
   }
   &:hover{
-    background-color: hsla(181, 100%, 50%, 1);
+   opacity: .8;
+
   }
+  input{
+    display: block;
+    width: 80%;
+    font-size: 15px;
+    margin-top: 12px;
+    margin-left: 10%;
+  //  border: 1px solid $iceblue;
+    color: black;
+    padding: 10px;
+    //background-color: $iceblue;
+    height: 35px;
+    border: none;
+    background-color:  hsla(191, 39%, 92%, 1);
+  }
+  input:hover{
+    border: 1px solid gray;
+  }
+  button{
+  margin-top: 12px;
+  position: absolute;
+  margin-left: 67%;
+
+  a{
+    text-decoration: none;
+    color: black;
+  }
+  }
+}
+.mailer{
+  position: relative;
+
+
+  p{
+    position: absolute;
+    margin-top: -35px;
+    margin-left: 53%;
+  }
+  #mailing{
+    margin-left: 87%;
+
+
+  }
+}
+
+#feelscontainer{
+  
 }
